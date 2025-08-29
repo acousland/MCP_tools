@@ -1,0 +1,7 @@
+fastmcp
+python-nmap
+uvicorn
+requests
+pathlib
+
+psutil

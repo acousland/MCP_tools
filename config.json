@@ -1,0 +1,48 @@
+{
+  "servers": [
+    {
+      "name": "File Server",
+      "script": "servers/file_server.py",
+      "port": 8001,
+      "description": "Provides file reading and directory listing capabilities",
+      "tools": [
+        {
+          "name": "read_file",
+          "description": "Read contents of a file from the local filesystem"
+        },
+        {
+          "name": "list_directory", 
+          "description": "List the contents of a directory"
+        },
+        {
+          "name": "get_file_info",
+          "description": "Get information about a file or directory"
+        }
+      ]
+    },
+    {
+      "name": "NMAP Server",
+      "script": "servers/nmap_server.py", 
+      "port": 8002,
+      "description": "Provides network scanning and NMAP functionality",
+      "tools": [
+        {
+          "name": "nmap_scan",
+          "description": "Perform an NMAP scan on the specified target"
+        },
+        {
+          "name": "ping_host",
+          "description": "Ping a host to check connectivity"
+        },
+        {
+          "name": "port_scan",
+          "description": "Scan specific ports on a host"
+        },
+        {
+          "name": "network_discovery",
+          "description": "Discover active hosts on a network"
+        }
+      ]
+    }
+  ]
+}
